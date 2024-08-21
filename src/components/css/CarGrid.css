@@ -1,0 +1,84 @@
+.card{
+    width: 150px;
+    height: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: ease-in-out 300ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.card:hover{
+    cursor: pointer;
+    background-color: #9BBEC8;
+    color: #fff;
+}
+
+.selectContainer{
+    display: flex;
+    gap: 80px;
+}
+
+.carDealerHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #164863;
+    height: 150px;
+    color: white;
+}
+
+.nextButtonContainer{
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.card.selected {
+    background-color: #12495c;
+    border-color: #DDF2FD;
+    color: white;
+}
+
+
+@media(max-width: 600px){
+    .carDealerHeader{
+        flex-direction: Column;
+        height: 250px;
+    }
+
+    .selectContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 0px;
+    }
+
+    .card{
+        margin: none;
+        width: 120px;
+        height: 150px;
+    }
+
+    .carList{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+        width: 90%;
+        height: 100%;
+    }
+}
